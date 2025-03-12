@@ -1,6 +1,11 @@
 import streamlit as st 
 import Simulation
 
+st.set_page_config(
+    page_title="MTG_Arena Draft Simulator",  
+    page_icon="icon.webp",  
+    layout="wide" 
+)
 
 st.title("Draft Simulation")
 
