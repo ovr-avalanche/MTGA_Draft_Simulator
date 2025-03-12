@@ -17,7 +17,7 @@ else:
 
 winrate = st.sidebar.number_input("Winrate", value=0.55, min_value=0.0, max_value=1.0)
 number_of_drafts = st.sidebar.number_input("Number of Drafts", value=1, min_value=1, max_value=9000)
-starting_diamonds = st.sidebar.number_input("Starting Diamonds", value=10000, min_value=0, max_value=1000000)
+starting_diamonds = st.sidebar.number_input("Starting Gems", value=10000, min_value=0, max_value=1000000)
 Simulation.Diamonds = starting_diamonds
 
 
@@ -38,7 +38,7 @@ if buttonval:
             break
 
     st.write("Drafts played: ", drafts_played)
-    st.write("Diamonds after the simulation: ", Simulation.Diamonds)
+    st.write("Gems after the simulation: ", Simulation.Diamonds)
     st.line_chart(diamondlist)
     
 
